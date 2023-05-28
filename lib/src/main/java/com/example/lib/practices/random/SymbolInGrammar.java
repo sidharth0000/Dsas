@@ -5,6 +5,7 @@ public class SymbolInGrammar {
     public int kthGrammar(int n, int k) {
         String[] arr = new String[n];
         arr[0] = "0";
+
         for (int i = 1; i < n; i++) {
             StringBuilder str = new StringBuilder();
             for (int j = 0; j < arr[i - 1].length(); j++) {
